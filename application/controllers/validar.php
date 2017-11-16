@@ -7,7 +7,7 @@ class Validar extends CI_Controller {
     }
 	public function inicial() 
 	{
-		$this->load->view('DB/tabla_view');
+		$this->load->view('DB/consultar');
 	}
 public function usuarioview() 
 	{
