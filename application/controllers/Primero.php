@@ -34,17 +34,24 @@ class Primero extends CI_Controller {
 			$dos= "2";
 			
 			if($this->Usuarios->existe($username, $password, $uno)) {
+				echo '<script language="javascript">alert("Usuario o clave incorrecta");</script>';
+				$this->load->view('primera');
 				
+			}else{
+			
 				redirect('validar/inicial');
 
-			}else if($this->Usuarios->existe2($username, $password, $dos)){
+			}
+
+
+			/*else if($this->Usuarios->existe2($username, $password, $dos)){
 				redirect('validar/usuarioview');				 
 
 			}else{
 
 				echo '<script language="javascript">alert("Usuario o clave incorrecta");</script>'; 
 				$this->load->view('primera');
-			}
+			}*/
 		}
 	}
 }
