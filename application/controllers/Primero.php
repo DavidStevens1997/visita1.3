@@ -34,8 +34,8 @@ class Primero extends CI_Controller {
 			$dos= "2";
 			
 			if($this->Usuarios->existe($username, $password, $uno)) {
-				echo '<script language="javascript">alert("alguno de los campos esta incorrecto verificar");</script>';
-				$this->load->view('menu');
+				echo '<script language="javascript">alert("uno de las claves estan mal");</script>';
+				$this->load->view('primera');
 				
 			}else{
 			
